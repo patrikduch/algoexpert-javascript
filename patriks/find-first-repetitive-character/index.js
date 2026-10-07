@@ -16,7 +16,6 @@ function findFirstRepetiveCharacter(input) {
         i++
     }
 
-    
     for (let j = 0; j < input.length; j++) {       
         if (dict[input[j]] > 1) {
                 return input[j]
@@ -26,10 +25,6 @@ function findFirstRepetiveCharacter(input) {
     return ""
 }
 
-
 const result = findFirstRepetiveCharacter("anna")
-
-
-
 console.log(result)
 
