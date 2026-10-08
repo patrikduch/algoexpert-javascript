@@ -1,6 +1,6 @@
 'use strict'
 
-function findFirstRepetiveCharacter(input) {
+function findFirstRepetitiveCharacter(input) {
 
     let i = 0
     const dict = {}
@@ -24,6 +24,6 @@ function findFirstRepetiveCharacter(input) {
     return ""
 }
 
-const result = findFirstRepetiveCharacter("anna")
+const result = findFirstRepetitiveCharacter("anna")
 console.log(result)
 
