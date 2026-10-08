@@ -7,7 +7,6 @@ function findFirstRepetiveCharacter(input) {
 
     while(i < input.length) {
         if (dict[input[i]]) {
-
             dict[input[i]] = dict[input[i]] + 1
         } else {
             dict[input[i]] = 1
