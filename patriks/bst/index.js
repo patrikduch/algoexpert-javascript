@@ -28,13 +28,13 @@ class BST {
     }
 
     print(prefix = '', isLeft = null) {
-    const pad = (bar) => (isLeft === null ? '' : bar ? '│   ' : '    ')
-    const connector = isLeft === null ? '' : isLeft ? '└── ' : '┌── '
+        const pad = (bar) => (isLeft === null ? '' : bar ? '│   ' : '    ')
+        const connector = isLeft === null ? '' : isLeft ? '└── ' : '┌── '
 
-    if (this.right) this.right.print(prefix + pad(isLeft === true), false)
-    console.log(prefix + connector + this.value)
-    if (this.left) this.left.print(prefix + pad(isLeft === false), true)
-}
+        if (this.right) this.right.print(prefix + pad(isLeft === true), false)
+        console.log(prefix + connector + this.value)
+        if (this.left) this.left.print(prefix + pad(isLeft === false), true)
+    }
 
 }
 
